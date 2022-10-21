@@ -14,6 +14,7 @@ include_once($filepath.'/../helpers/format.php');
 						<tr>
 							<th>No.</th>
 							<th>Order Time</th>
+							<th>Customer ID</th>
 							<th>Product</th>
 							<th>Quantity</th>
 							<th>Price</th>
@@ -34,10 +35,12 @@ include_once($filepath.'/../helpers/format.php');
 						<tr class="odd gradeX">
 							<td><?php echo $i; ?></td>
 							<td><?php echo $fm->formatDate($result['date_order']); ?></td>
+							<td><?php echo $result['customer_id']; ?></td>
 							<td><?php echo $result['productName']; ?></td>
 							<td><?php echo $result['quantity']; ?></td>
 							<td><?php echo $result['price'].''.'VND'; ?></td>
-							<td><a href="customer.php?customerid=<?php $result['customer_id'] ?>">View Address</a></td>
+						<!-- 	<td><a href="customer.php?customerId=<?php $result['customer_id'] ?>">View</a></td> -->
+						    <td><a href="customer_view.php?customerid =<?php $result['customer_id'] ?>">View</a></td>
 							<td>
 								<?php
 								if($result['Status']==0){

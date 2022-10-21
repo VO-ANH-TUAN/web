@@ -14,7 +14,12 @@ if($_SERVER['REQUEST_METHOD']=='POST'&& isset($_POST['submit'])){
      $quantity=$_POST['quantity'];
     $AddtoCart=$ct->add_to_cart($quantity,$id);
 }
- ?>
+?>
+<?php 
+if(isset($_POST['comment_submit'])){
+	$comment_d=$cs->insert_comment();
+}
+?>
  <div class="main">
     <div class="content">
     	<div class="section group">
@@ -69,7 +74,25 @@ if($_SERVER['REQUEST_METHOD']=='POST'&& isset($_POST['submit'])){
  				</div>
  		</div>
  	</div>
+
+ 	<form action="" method="POST"> 		
+ 	<p class="head-01">Comment</p>
+ 	<p><input type="hidden" value="<?php echo $id?>" name="product_id_comment"></p>
+ 	<p><input class="form-control-1" type="text" placeholder="Tên người bình luận " name="commenter"></p>
+    <p><textarea class="form-control-2" placeholder="Bình luận" name="comment"></textarea></p>
+    <p><input type="submit"name="comment_submit" class="btn-btn-success" value="Gửi"></p>       
+ 	</form>
+ 	<style> input[type=text] {  width: 100%;  padding: 12px 20px;  margin: 8px 0;  box-sizing: border-box;}
+     textarea{width: 100%;height: 100px;  padding: 12px 20px;  margin: 8px 0; box-sizing: border-box;}
+     input[type=submit]{width: 100px; background:#00DD00;padding: 10px 20px; margin: 8px 0;border-radius:3px;color: white; cursor: pointer;}
+     .head-01{ font-size: 30px; font-weight: 3px; }
+    </style>
+    <?php 
+ 	if(isset($comment_d)){
+ 		echo $comment_d;
+ 	} ?>
  </div>
+ 
 	<?php
 include 'inc/footer.php';
 

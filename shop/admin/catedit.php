@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 ?>
         <div class="grid_10">
             <div class="box round first grid">
-                <h2>Sua danh mục</h2>
+                <h2>Sửa danh mục</h2>
                 <?php 
                 if(isset($updateCat)){
                     echo $updateCat;

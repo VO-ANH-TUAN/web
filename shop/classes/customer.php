@@ -100,5 +100,25 @@ include_once($filepath.'/../helpers/format.php');
            }
             }
           }
+      public function insert_comment(){
+        $product_id=$_POST['product_id_comment'];
+        $commenter=$_POST['commenter'];
+        $comment=$_POST['comment'];
+
+       if($commenter==""|| $comment==""){
+         $alert ="<span class='error'>Fields must be not empty </span>";
+          return $alert;
+       }else{
+        $query="INSERT INTO tbl_comment(commenter,comment_detail,product_id) VALUES(' $commenter','  $comment',' $product_id')";
+           $insert_row=$this->db->insert($query);        
+           if($insert_row){
+          $alert ="<span class='success'>Comment has been submitted for moderation</span>";
+          return $alert;
+            }else{
+           $alert ="<span class='error'>Comments have not been submitted for moderation</span>";
+          return $alert;
+           }
+       }
+      }
     }        
 ?>

@@ -7,14 +7,14 @@ include 'inc/header.php';
  <div class="main">
     <div class="content">
     	<h2>TESTONI SHOES – 38.000 USD</h2>
-    	<p> Khoảng: 862.373.337 VND<br>
-Thành lập từ năm 1929, Testoni là một trong những hãng sở hữu giày đắt nhất thế giới. Mặc dù ra đời từ rất lâu nhưng cho đến nay, Testoni vẫn giữ vững phong độ bền vững của mình trong lòng người tiêu dùng.</p>
+    	<p>
+Founded in 1929, Testoni is one of the most expensive shoe brands in the world. Although established for a long time, so far, Testoni has maintained its sustainable performance in the hearts of consumers.</p>
      <img src="images/tintuc01.webp"alt=""/>
-    		<p>Dù bạn không phải là người sành giày nhưng chắc chắn bạn phải đồng ý rằng đôi giày trông thật bắt mắt<br>
+    		<p>Even if you are not a connoisseur of shoes, you must agree that the shoes look eye-catching<br>
     			<br>
-Chiếc giày đắt nhất thế giới Testoni Shoes hấp dẫn người dùng bởi bộ áo cao cấp mà nó khoác lên. Cụ thể, đôi giày này được làm từ da cá sấu tốt và bền nhất mọi thời đại.
+The world's most expensive shoe, Testoni Shoes, attracts users by the high-quality shirt it wears. Specifically, this shoe is made from the best and most durable crocodile skin of all time.
 <br>
-Nhưng đó chưa phải là lý do chính để đôi giày lý tưởng này đạt đến 38.000 USD. Sở hữu khả năng chống nước cực tốt đã giúp nó trở thành đôi giày mắc nhất thế giới và nhận sự săn đón nồng nhiệt từ mọi người.</p>
+But that is not the main reason for this ideal shoe to reach 38,000 USD. Possessing extremely good water resistance has made it the most expensive shoe in the world and received a warm welcome from everyone.</p>
     </div>
  </div>
 <?php
